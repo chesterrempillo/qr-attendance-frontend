@@ -1,65 +1,69 @@
-.generator-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  font-family: Arial, sans-serif;
+.qr-generator-container {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f9fafc 0%, #eef2f7 100%);
+  min-height: 100vh;
 }
 
-.generator-title {
-  font-size: 28px;
+.qr-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.qr-status {
+  color: #555;
+  font-size: 1.1rem;
   margin-bottom: 20px;
 }
 
-/* Input field for QR data */
-.input-field {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  width: 300px;
-  max-width: 90%;
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
-/* Generate button */
-.generate-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: #2575fc;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
-
-.generate-button:hover {
-  background-color: #1a5dcc;
-}
-
-/* Status text after generation */
-.status-text {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-/* QR code display box */
-.qr-output {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.qr-output img {
-  width: 300px;
-  height: 300px;
+.qr-image {
+  max-width: 300px;
+  margin-top: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.qr-button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.qr-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.qr-btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.qr-btn-primary:hover {
+  background-color: #0066d1;
+}
+
+.qr-btn-secondary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.qr-btn-secondary:hover {
+  background-color: #3b9c41;
+}
+
+.qr-tip {
+  margin-top: 25px;
+  color: #777;
+  font-size: 0.95rem;
 }
